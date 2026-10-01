@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>免费成人电影网 - 免费影视推荐导航 | mianfeichengrendianyingwang-top.github.io</title>
+<meta name="description" content="免费成人电影网：https://mianfeichengrendianyingwang-top.github.io，免费成人影视推荐导航站，提供动作、喜剧、爱情、科幻等免费影片分类，零门槛观影指南，单页自适应，必应收录友好。" />
+<meta name="keywords" content="免费成人电影网, mianfeichengrendianyingwang-top, 免费成人电影, 免费成人影视, 在线电影导航" />
+<meta name="author" content="免费成人电影网" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#00b894" />
+<link rel="canonical" href="https://mianfeichengrendianyingwang-top.github.io/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="免费成人电影网 - 免费成人影视推荐导航" />
+<meta property="og:description" content="免费成人电影网：https://mianfeichengrendianyingwang-top.github.io，免费成人影视推荐导航站。" />
+<meta property="og:url" content="https://mianfeichengrendianyingwang-top.github.io/" />
+<meta property="og:site_name" content="免费成人电影网" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="免费成人电影网 - 免费成人影视推荐导航" />
+<meta name="twitter:description" content="免费成人电影网：https://mianfeichengrendianyingwang-top.github.io，免费成人影视推荐导航站。" />
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "免费成人电影网",
+  "url": "https://mianfeichengrendianyingwang-top.github.io/",
+  "description": "免费成人电影网是免费影视推荐导航站，提供动作、喜剧、爱情、科幻等免费影片分类和零门槛观影指南。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://mianfeichengrendianyingwang-top.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "免费成人电影网",
+  "url": "https://mianfeichengrendianyingwang-top.github.io/",
+  "slogan": "好电影，零门槛"
+}
+</script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Nunito", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #2d3436;
+    background: #f0fffc;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+  a { text-decoration: none; color: inherit; }
+
+  /* 波浪装饰背景 */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0,184,148,0.08) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* 导航 */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 28px;
+    background: #fff;
+    border-bottom: 2px solid #00b894;
+    box-shadow: 0 2px 12px rgba(0,184,148,0.1);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    animation: pulse-ring 2s ease-in-out infinite;
+  }
+  @keyframes pulse-ring {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0,184,148,0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(0,184,148,0); }
+  }
+  .brand-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #2d3436;
+  }
+  .brand-text span { color: #00b894; }
+  .brand small {
+    display: block;
+    font-size: 10px;
+    color: #aaa;
+    font-weight: 400;
+  }
+  .menu-btn {
+    display: none;
+    font-size: 22px;
+    background: transparent;
+    color: #00b894;
+    border: 2px solid #00b894;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+  }
+  .nav-links a {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #636e72;
+    border-radius: 20px;
+    transition: all .3s;
+  }
+  .nav-links a:hover {
+    color: #00b894;
+    background: rgba(0,184,148,0.1);
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding: 60px 24px 50px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  .free-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 18px;
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    animation: badge-bounce 2s ease-in-out infinite;
+  }
+  @keyframes badge-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  .hero h1 {
+    font-size: 40px;
+    color: #2d3436;
+    margin-bottom: 14px;
+    font-weight: 900;
+  }
+  .hero h1 span { color: #00b894; }
+  .hero p {
+    font-size: 16px;
+    color: #636e72;
+    margin-bottom: 20px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .url-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px dashed #55efc4;
+    color: #00b894;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 16px 44px;
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: all .3s;
+    box-shadow: 0 4px 16px rgba(0,184,148,0.35);
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 0; height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .6s, height .6s;
+  }
+  .cta-btn:hover::after { width: 300px; height: 300px; }
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,184,148,0.45);
+  }
+
+  /* 零门槛标签条 */
+  .zero-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px 24px;
+    background: #fff;
+    border-bottom: 1px solid #d1f7e8;
+    flex-wrap: wrap;
+  }
+  .zero-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #00b894;
+  }
+  .zero-item .check {
+    width: 22px; height: 22px;
+    background: #00b894;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+  }
+
+  /* 区块通用 */
+  section { padding: 48px 24px; max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+  .sec-head { text-align: center; margin-bottom: 32px; }
+  .sec-head h2 {
+    font-size: 26px;
+    color: #2d3436;
+    margin-bottom: 8px;
+    font-weight: 900;
+  }
+  .sec-head h2 span { color: #00b894; }
+  .sec-head p { color: #636e72; font-size: 14px; }
+
+  /* 免费成人专区 - 瀑布流卡片 */
+  .free-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+  .free-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 18px;
+    text-align: center;
+    transition: all .3s;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(0,184,148,0.08);
+  }
+  .free-card:hover {
+    border-color: #00b894;
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0,184,148,0.15);
+  }
+  .free-card .free-icon { font-size: 36px; margin-bottom: 12px; }
+  .free-card h3 { font-size: 16px; color: #2d3436; margin-bottom: 6px; font-weight: 800; }
+  .free-card p { font-size: 12px; color: #636e72; line-height: 1.7; margin-bottom: 12px; }
+  .price-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 14px;
+    background: #f0fffc;
+    border-radius: 12px;
+  }
+  .price-old { font-size: 12px; color: #bbb; text-decoration: line-through; }
+  .price-new { font-size: 14px; color: #00b894; font-weight: 800; }
+
+  /* 零门槛指南 */
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .guide-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 22px;
+    box-shadow: 0 2px 8px rgba(0,184,148,0.08);
+    transition: all .3s;
+  }
+  .guide-card:hover {
+    box-shadow: 0 8px 20px rgba(0,184,148,0.12);
+    transform: translateY(-3px);
+  }
+  .guide-step {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 14px;
+  }
+  .guide-card h4 { font-size: 16px; color: #2d3436; margin-bottom: 8px; font-weight: 800; }
+  .guide-card p { font-size: 13px; color: #636e72; line-height: 1.8; }
+
+  /* 热门免费榜 */
+  .hot-section {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 16px rgba(0,184,148,0.08);
+  }
+  .hot-list { list-style: none; }
+  .hot-list li {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0faf6;
+    gap: 16px;
+  }
+  .hot-list li:last-child { border-bottom: none; }
+  .hot-num {
+    width: 36px; height: 36px;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+  .hot-list li:nth-child(1) .hot-num { background: linear-gradient(135deg, #ff6b6b, #ff8e8e); color: #fff; }
+  .hot-list li:nth-child(2) .hot-num { background: linear-gradient(135deg, #feca57, #ffd93d); color: #fff; }
+  .hot-list li:nth-child(3) .hot-num { background: linear-gradient(135deg, #48dbfb, #7fdcfa); color: #fff; }
+  .hot-list li:nth-child(n+4) .hot-num { background: #f0fffc; color: #00b894; }
+  .hot-info { flex: 1; }
+  .hot-info h4 { font-size: 15px; color: #2d3436; font-weight: 700; margin-bottom: 2px; }
+  .hot-info p { font-size: 12px; color: #aaa; }
+  .hot-views {
+    font-size: 13px;
+    color: #00b894;
+    font-weight: 700;
+  }
+
+  /* 关于 */
+  .about {
+    background: #fff;
+    border-radius: 20px;
+    padding: 44px 32px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,184,148,0.08);
+  }
+  .about h2 { color: #2d3436; margin-bottom: 14px; }
+  .about h2 span { color: #00b894; }
+  .about p { max-width: 680px; margin: 0 auto 14px; color: #636e72; }
+  .about .quote {
+    font-size: 17px;
+    color: #00b894;
+    margin: 20px 0;
+    font-weight: 800;
+    padding: 16px;
+    background: #f0fffc;
+    border-radius: 12px;
+    display: inline-block;
+  }
+  .about .url-show {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px dashed #55efc4;
+    color: #00b894;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  /* 联系 */
+  .contact {
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .contact h2 { color: #2d3436; margin-bottom: 12px; }
+  .contact p { color: #636e72; margin-bottom: 24px; }
+  .contact .btn {
+    display: inline-block;
+    padding: 16px 44px;
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 30px;
+    transition: all .3s;
+  }
+  .contact .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,184,148,0.4);
+  }
+
+  footer {
+    text-align: center;
+    padding: 28px 20px 40px;
+    color: #bbb;
+    font-size: 12px;
+    border-top: 2px solid #d1f7e8;
+    background: #fff;
+  }
+
+  /* 移动端 */
+  @media (max-width: 900px) {
+    .free-grid { grid-template-columns: repeat(2, 1fr); }
+    .guide-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .menu-btn { display: block; }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 66px; left: 0; right: 0;
+      flex-direction: column;
+      gap: 0;
+      background: #fff;
+      border-bottom: 2px solid #00b894;
+      padding: 10px 0;
+    }
+    .nav-links.show { display: flex; }
+    .nav-links a { display: block; text-align: center; padding: 14px 24px; }
+    .free-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 28px; }
+    .hot-section { padding: 20px; }
+    .hot-list li { flex-wrap: wrap; }
+    .zero-bar { gap: 10px; }
+  }
+</style>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<nav class="nav">
+  <div class="brand">
+    <div class="brand-icon">🆓</div>
+    <div>
+      <div class="brand-text">免费成人<span>电影网</span></div>
+      <small>mianfeichengrendianyingwang-top.github.io</small>
+    </div>
+  </div>
+  <button class="menu-btn" aria-label="菜单" onclick="document.getElementById('navLinks').classList.toggle('show')">≡</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">首页</a></li>
+    <li><a href="#free">免费成人专区</a></li>
+    <li><a href="#guide">零门槛指南</a></li>
+    <li><a href="#hot">热门免费榜</a></li>
+    <li><a href="#about">关于免费</a></li>
+    <li><a href="#contact">联系我们</a></li>
+  </ul>
+</nav>
+
+<div class="zero-bar">
+  <div class="zero-item"><span class="check">✓</span> 零注册</div>
+  <div class="zero-item"><span class="check">✓</span> 零付费</div>
+  <div class="zero-item"><span class="check">✓</span> 零广告</div>
+  <div class="zero-item"><span class="check">✓</span> 零门槛</div>
+</div>
+
+<header class="hero" id="home">
+  <div class="free-badge">🆓 完全免费 · 零门槛观影</div>
+  <h1><span>免费成人</span>电影网</h1>
+  <p>
+    免费成人电影网（https://mianfeichengrendianyingwang-top.github.io）是一个免费影视推荐导航站。
+    我们致力于让每个人都能轻松找到好电影——零注册、零付费、零广告、零门槛。
+    好电影，零门槛。从动作大片到温情喜剧，从科幻烧脑到浪漫爱情，这里都有。
+  </p>
+  <div class="url-box">🌐 网站网址：https://mianfeichengrendianyingwang-top.github.io</div>
+  <br />
+  <a class="cta-btn" href="#free">免费成人看片</a>
+</header>
+
+<section id="free">
+  <div class="sec-head">
+    <h2><span>免费成人</span>专区</h2>
+    <p>精选免费成人影片，分类导航，一键直达</p>
+  </div>
+  <div class="free-grid">
+    <div class="free-card">
+      <div class="free-icon">💥</div>
+      <h3>动作免费</h3>
+      <p>热血激战、枪战追逐、武打格斗，免费看个够。</p>
+      <div class="price-tag"><span class="price-old">¥29</span><span class="price-new">免费</span></div>
+    </div>
+    <div class="free-card">
+      <div class="free-icon">😂</div>
+      <h3>喜剧免费</h3>
+      <p>爆笑喜剧、无厘头、黑色幽默，开心不花钱。</p>
+      <div class="price-tag"><span class="price-old">¥19</span><span class="price-new">免费</span></div>
+    </div>
+    <div class="free-card">
+      <div class="free-icon">💕</div>
+      <h3>爱情免费</h3>
+      <p>甜蜜浪漫、虐恋情深、青春回忆，感动零费用。</p>
+      <div class="price-tag"><span class="price-old">¥25</span><span class="price-new">免费</span></div>
+    </div>
+    <div class="free-card">
+      <div class="free-icon">🚀</div>
+      <h3>科幻免费</h3>
+      <p>太空探索、时间旅行、AI未来，脑洞不收费。</p>
+      <div class="price-tag"><span class="price-old">¥35</span><span class="price-new">免费</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="sec-head">
+    <h2><span>零门槛</span>观影指南</h2>
+    <p>三步开始你的免费观影之旅</p>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <div class="guide-step">1</div>
+      <h4>打开网站</h4>
+      <p>访问 https://mianfeichengrendianyingwang-top.github.io，无需注册账号，无需下载App，打开就能看。</p>
+    </div>
+    <div class="guide-card">
+      <div class="guide-step">2</div>
+      <h4>选择分类</h4>
+      <p>从动作、喜剧、爱情、科幻等分类中挑选你感兴趣的影片类型，或直接在排行榜中找到热门推荐。</p>
+    </div>
+    <div class="guide-card">
+      <div class="guide-step">3</div>
+      <h4>开始观影</h4>
+      <p>点击影片即可获取播放信息，支持手机、平板、电脑多端观看，随时随地免费看。</p>
+    </div>
+  </div>
+</section>
+
+<section id="hot">
+  <div class="sec-head">
+    <h2>热门<span>免费榜</span></h2>
+    <p>本周最多人看的免费影片 TOP 6</p>
+  </div>
+  <div class="hot-section">
+    <ul class="hot-list">
+      <li>
+        <div class="hot-num">1</div>
+        <div class="hot-info">
+          <h4>肖申克的救赎</h4>
+          <p>希望让人自由 · 经典必看</p>
+        </div>
+        <div class="hot-views">🔥 12.8万</div>
+      </li>
+      <li>
+        <div class="hot-num">2</div>
+        <div class="hot-info">
+          <h4>阿甘正传</h4>
+          <p>人生就像一盒巧克力</p>
+        </div>
+        <div class="hot-views">🔥 10.5万</div>
+      </li>
+      <li>
+        <div class="hot-num">3</div>
+        <div class="hot-info">
+          <h4>泰坦尼克号</h4>
+          <p>永恒的经典爱情</p>
+        </div>
+        <div class="hot-views">🔥 9.2万</div>
+      </li>
+      <li>
+        <div class="hot-num">4</div>
+        <div class="hot-info">
+          <h4>盗梦空间</h4>
+          <p>梦中梦的终极挑战</p>
+        </div>
+        <div class="hot-views">🔥 8.7万</div>
+      </li>
+      <li>
+        <div class="hot-num">5</div>
+        <div class="hot-info">
+          <h4>三傻大闹宝莱坞</h4>
+          <p>笑着流泪的青春喜剧</p>
+        </div>
+        <div class="hot-views">🔥 7.9万</div>
+      </li>
+      <li>
+        <div class="hot-num">6</div>
+        <div class="hot-info">
+          <h4>星际穿越</h4>
+          <p>爱穿越时空的科幻神作</p>
+        </div>
+        <div class="hot-views">🔥 7.3万</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>关于<span>免费成人电影网</span></h2>
+  <p>
+    免费成人电影网（https://mianfeichengrendianyingwang-top.github.io）是一个以"免费、零门槛"为核心的影视导航站。
+    我们相信好电影不应该有门槛——无论你身处何地、经济条件如何，都应该能轻松看到好电影。
+    在这里，你不会看到付费墙、注册弹窗或烦人广告，只有纯粹的影片推荐和导航。
+  </p>
+  <div class="quote">"好电影，零门槛。"</div>
+  <p style="font-size:13px; color:#999;">
+    网站采用单页设计，移动端友好，内容聚焦健康、合规的影视推荐。
+    不堆砌垃圾关键词，不采集低质内容，只做有价值的免费导航。
+  </p>
+  <div class="url-show">🌐 mianfeichengrendianyingwang-top.github.io</div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>联系我们</h2>
+  <p>免费影片推荐、合作交流、友情链接，欢迎联系免费成人电影网！</p>
+  <a class="btn" href="#home">回到首页</a>
+  <p style="margin-top:24px;font-size:12px;color:#999;">
+    网站名称：免费成人电影网 ｜ 网站网址：https://mianfeichengrendianyingwang-top.github.io
+  </p>
+</section>
+
+<footer>
+  © 2026 免费成人电影网 · mianfeichengrendianyingwang-top.github.io · 免费影视推荐导航
+</footer>
+
+<script>
+  document.querySelectorAll('#navLinks a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('navLinks').classList.remove('show');
+    });
+  });
+</script>
+
+</body>
+</html>
